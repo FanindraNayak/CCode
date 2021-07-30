@@ -19,7 +19,7 @@ int isempty() {
 
 
 // Checking if the satack is full or not
-int isfull() {
+int isFull() {
 
    if(top == MAXSIZE)
       return 1;
@@ -51,7 +51,7 @@ void pop() {
 // Writing the push function or function for entering element
 void push(char data[]) {
 
-   if(!isfull()) {
+   if(!isFull()) {
       top = top + 1;   
     //   stack[top] = data;
       strcpy(stack[top],data);
@@ -86,7 +86,7 @@ int main() {
 //   Displaying elements that are pushed to top
    display();
    
-//  Deleting tthe topmost element from stack
+//  Deleting the topmost element from stack
   pop();
    
    printf("\n");
